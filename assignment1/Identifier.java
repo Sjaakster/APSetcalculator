@@ -18,7 +18,7 @@ public class Identifier implements IdentifierInterface {
     @Override
     public void init(char c) {
         identifier.delete(0,identifier.length());
-        identifier.append('c');
+        identifier.append(c);
     }
 
     @Override
