@@ -103,6 +103,7 @@ public class Set implements SetInterface {
     	Set result = new Set(this);
 
 		for (int i = 0; i < s.size; i++) {
+		    //NOTE : This if can be removed, the add function handles the cas where the Set contains the element
 			if (!this.contains(s.setArray[i])) {
 				result.add(s.setArray[i]);
 
@@ -154,6 +155,8 @@ public class Set implements SetInterface {
 				result.add(s.setArray[i]);
 			}
 		}
+
+		//NOTE : return difference(s).union(s.difference(this))
 
 		return result;
 	}
