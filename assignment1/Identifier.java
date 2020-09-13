@@ -33,7 +33,7 @@ public class Identifier implements IdentifierInterface {
 
     @Override
     public boolean equals(Identifier comparand) {
-        return this.get().equals(comparand.get());
+        return this.get().compareTo(comparand.get()) == 0;
     }
 
     @Override
