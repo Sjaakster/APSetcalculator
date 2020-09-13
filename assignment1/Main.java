@@ -23,7 +23,7 @@ public class Main {
 	}
 
 	private boolean nextCharIsLetter(Scanner in) {
-		return in.hasNext("[a-Za-z]");
+		return in.hasNext("[A-Za-z]");
 	}
 
 	private void skipSpaces(Scanner s){
