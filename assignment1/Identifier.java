@@ -13,7 +13,6 @@ public class Identifier implements IdentifierInterface {
     Identifier(Identifier src){
         identifier = new StringBuffer();
         identifier.append(src.identifier);
-
     }
 
     @Override
@@ -36,7 +35,7 @@ public class Identifier implements IdentifierInterface {
     public boolean equals(Identifier comparand) {
         return this.get().equals(comparand.get());
     }
-    
+
     @Override
     public String get() {
         return identifier.toString();
